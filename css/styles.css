@@ -1,4 +1,66 @@
+:root {
+  --primary-white-color: #ffffff;
+  --primary-text-color: #212121;
+  --description-text-color: #757575;
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+}
+
 body {
-  background-color: #e5e5e5;
-  font-family: 'Roboto';
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--logo-color);
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+
+.auth-nav a {
+  color: var(--description-text-color);
+}
+
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: var(--primary-text-color);
+}
+
+.site-nav {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.title {
+  color: var(--primary-text-color);
+}
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+.text {
+  color: var(--description-text-color);
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
 }
