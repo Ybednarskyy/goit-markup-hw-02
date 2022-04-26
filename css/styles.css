@@ -50,6 +50,7 @@ body {
   color: inherit;
 }
 
+/* Забирає підкреслювання посилань */
 .link {
   text-decoration: none;
 }
