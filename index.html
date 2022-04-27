@@ -16,18 +16,20 @@
   <body>
     <!--header-->
     <header>
-      <nav>
+      <nav class="main-nav">
         <!--logo-->
-        <a href="index.html" class="logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
+        <a href="index.html" class="logo" lang="en">Web<Studio class="header-logo">Studio</span></a>
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="./index.html" class="site-nav-link link current">Студия</a></li>
+          <li><a href="portfolio.html" class="site-nav-link link">Портфолио</a></li>
+          <li><a href="" class="site-nav-link link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="auth-nav list">
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="auth-nav-link link">+38 096 111 11 11</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="auth-nav-link link">info@devstudio.com</a>
+        </li>
       </ul>
     </header>
     <main>
@@ -39,8 +41,8 @@
       </div>
       <!-- features -->
       <section class="section">
-        <!-- Поставив aria-label щоб не приховувати заголовок. Не знаю чи це коректно -->
-        <h2 aria-label="Про нас"></h2>
+        <!-- TODO Заголовок приховати -->
+        <h2>Про нас</h2>
         <ul class="list">
           <li>
             <h3 class="title">Внимание к деталям</h3>
@@ -112,12 +114,26 @@
       </section>
     </main>
     <!--Footer-->
-    <footer>
-      <a href="index.html" class="logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
+    <footer class="footer">
+      <a href="index.html" class="logo" lang="en">Web<Studio class="footer-logo">Studio</span></a>
       <address class="address">
-        г. Киев, пр-т Леси Украинки, 26<br />
-        info@example.com<br />
-        +38 099 111 11 11
+        <ul class="address-list list">
+          <li class="address-item">
+            <a
+              href="https://goo.gl/maps/Cqgj4mE8dXXuhMne9"
+              class="address-link address-link-white link"
+              target="_blank"
+              rel="noreferrer, noopener"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="address-item">
+            <a href="mailto:info@example.com" class="address-link link">info@example.com</a>
+          </li>
+          <li class="address-item">
+            <a href="tel:+380991111111" class="address-link link">+38 099 111 11 11</a>
+          </li>
+        </ul>
       </address>
     </footer>
   </body>

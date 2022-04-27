@@ -4,8 +4,10 @@
   --primary-text-color: #212121;
   --description-text-color: #757575;
   --accent-color: #2196f3;
-  --logo-color: #000000;
+  --header-logo-color: #000000;
   --button-color: #f5f4fa;
+  --background-dark-color: #2f303a;
+  --address-item-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Стилі які наслідуються */
@@ -19,7 +21,7 @@ body {
 
 /* Логотип */
 .logo {
-  color: var(--logo-color);
+  color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -28,8 +30,12 @@ body {
   text-decoration: none;
 }
 
-.logo-blue {
-  color: var(--accent-color);
+.header-logo {
+  color: var(--header-logo-color);
+}
+
+.footer-logo {
+  color: var(--primary-white-color);
 }
 
 /* Забирає символи списку */
@@ -37,17 +43,25 @@ body {
   list-style: none;
 }
 
-.site-nav .link {
+.site-nav,
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link {
   color: var(--primary-text-color);
 }
 
-/* Виділяє кольором посилання поточної сторінки */
-.site-nav .current {
-  color: var(--accent-color);
+.auth-nav-link {
+  color: inherit;
 }
 
-.auth-nav .link {
-  color: inherit;
+/* Виділяє кольором посилання поточної сторінки */
+.current {
+  color: var(--accent-color);
 }
 
 /* Забирає підкреслювання посилань */
@@ -63,7 +77,6 @@ body {
 /* Колір заголовку героя білий, тому тимчасово застосував фон тексту */
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -119,8 +132,21 @@ body {
   text-align: center;
 }
 
-.address {
+.hero,
+.footer {
+  background-color: var(--background-dark-color);
+}
+
+.address-link {
+  color: var(--address-item-color);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address-link-white {
+  color: var(--primary-white-color);
 }
 
 .product-title {
@@ -139,7 +165,7 @@ body {
 
 .filter-button {
   background-color: var(--button-color);
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
